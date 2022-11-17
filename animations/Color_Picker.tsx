@@ -38,6 +38,15 @@ class ColorPiker extends React.Component{
         const colorStyle = {
             backgroundColor: this.state.color
         }
+
+        const rowStyle ={
+            opacity: this.state.animation,
+            transform: [
+                {
+                    scaleY: this.state.animation
+                }
+            ]
+        }
         return (  
             <View style={styles.container}>
             <Animated.View style={[rowStyle, styles.rowWrap]}>
